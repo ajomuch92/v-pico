@@ -3,7 +3,9 @@
   "author": {
     "name": "Aarón Montes"
   },
-  "private": true,
+  "repository": {
+    "url": "https://github.com/ajomuch92/v-pico"
+  },
   "version": "0.0.1",
   "type": "module",
   "scripts": {
