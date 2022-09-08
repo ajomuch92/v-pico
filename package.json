@@ -1,7 +1,10 @@
 {
   "name": "v-pico",
+  "author": {
+    "name": "Aarón Montes"
+  },
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,5 +17,14 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
     "vite": "^3.1.0"
+  },
+  "files": ["dist"],
+  "main": "./dist/v-pico.umd.js",
+  "module": "./dist/v-pico.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/v-pico.es.js",
+      "require": "./dist/v-pico.umd.js"
+    }
   }
 }
